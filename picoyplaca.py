@@ -22,17 +22,17 @@ class Pico_placa:
     # This method validates the input
         
         if (len(self.license) == 7) and (0.00 <= float(self.time) <= 24.59):
-            #print('The licese number is: CORRECT')
+            print('The licese number is: CORRECT')
             return 1
         else:
-            #print('The licese number is: INCORRECT')
+            print('The licese number is: INCORRECT')
             return 0
         
     def last_digit(self):
     # This method returns the last digit of a license
         
         self.last_digit = self.license[-1:]
-        #print('The last digit is: ' + str(self.last_digit))
+        print('The last digit is: ' + str(self.last_digit))
         
     def request(self):
     # This method makes the request if the car should be or not outside
